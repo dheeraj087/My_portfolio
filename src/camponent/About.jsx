@@ -55,7 +55,7 @@ const About = ({ Extra, textCss }) => {
   const glowRefs = useRef([null]);
   return (
     <>
-      <div className=" w-full h-[100%] sm:my-0 -my-100 mb-10">
+      <div className=" w-full h-[100%] sm:mt-0 -mt-100 mb-10">
         {Extra && (
           <>
             {/* <AboutLink /> */}
