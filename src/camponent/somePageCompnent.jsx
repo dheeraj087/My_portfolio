@@ -22,7 +22,7 @@ function AboutLink() {
 }
 
 // function Exprience() {
-//   return ( 
+//   return (
 //   <>
 //       <h2
 //         className={`text-[72px] w-20 ml-20 whitespace-break-spaces pr-15 text-[#8d8e8a] leading-19 tracking-[-3px] mt-15 font-normal font-['Audiowide',"sain-serif"] `}
@@ -71,8 +71,8 @@ function AboutLink() {
 //               expectations and user needs.
 //             </p>
 //           </div>
-//           <div className="w-[90%] m-auto p-3 pl-6 bg-[#212127] rounded-3xl c">
-//           <div className="w-70 h-70 bg-[#212127] rounded-2xl p-5 ">
+//           <div className ="w-[90%] m-auto p-3 pl-6 bg-[#212127] rounded-3xl c">
+//           <div className ="w-70 h-70 bg-[#212127] rounded-2xl p-5 ">
 //             <p>UX Researcher</p>
 //             <p>InnovateUX Labs</p>
 //             <p>Learning in 2024 </p>
@@ -83,8 +83,8 @@ function AboutLink() {
 //             </p>
 //           </div>
 //         </div>
+
 //       </div>
 //     </>
 //   );
 // }
-
