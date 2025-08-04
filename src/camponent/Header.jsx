@@ -44,7 +44,7 @@ window.matchMedia("max-width: 720px")
           home
         </NavLink>
         <NavLink
-          to={"/My_portfolio/about"}
+          to={"/about"}
           className={({ isActive }) =>
             isActive ? "text-white" : "text-[#E5F48C]"
           }
@@ -53,7 +53,7 @@ window.matchMedia("max-width: 720px")
         </NavLink>
         <NavLink
           
-          to={"/My_portfolio/serves"}
+          to={"/serves"}
           className={({ isActive }) =>
             isActive ? "text-white" : "text-[#E5F48C]"
           }
@@ -62,7 +62,7 @@ window.matchMedia("max-width: 720px")
         </NavLink>
         <NavLink
           
-          to={"/My_portfolio/contant"}
+          to={"/contant"}
           className={({ isActive }) =>
             isActive ? "text-white" : "text-[#E5F48C]"
           }
@@ -71,7 +71,7 @@ window.matchMedia("max-width: 720px")
         </NavLink>
         <NavLink
           
-          to={"/My_portfolio/mywark"}
+          to={"/mywark"}
           className={({ isActive }) =>
             isActive ? "text-white" : "text-[#E5F48C]"
           }
