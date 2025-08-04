@@ -8,7 +8,6 @@ import My_work from "./Mywork.jsx";
 import Footer from "./Footer.jsx";
 
 function App() {
-  
   return (
     <>
       <BrowserRouter>
@@ -17,9 +16,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route
             path="/about"
-            element={
-              <About Extra={true} textCss={"text-[230px]"} />
-            }
+            element={<About Extra={true} textCss={"text-[230px]"} />}
           />
           <Route
             path="/serves"
@@ -28,7 +25,7 @@ function App() {
           <Route path="/contant" element={<ContactForm />} />
           <Route path="/mywark" element={<My_work />} />
         </Routes>
-      <Footer />
+        <Footer />
       </BrowserRouter>
     </>
   );
