@@ -18,14 +18,15 @@ const Header = () => {
 window.matchMedia("max-width: 720px")
   return (
     <>
-     {media?
-      ( <nav
+     
+     {/* {media? */}
+       <nav
         className="decoration-none uppercase text-[#E5F48C] p-1.5 
-      m-auto pr-3 mt-1.5 mb-10 w-11/12 text-xl gap-3 h-8 bg-black-950 flex justify-between 
+      m-auto pr-3 mt-3.5 mb-10 w-11/12 text-2xl gap-3 h-8 bg-black-950 flex justify-between 
       items-center font-[Audiowide]"
       >
         <NavLink
-          to={"/My_portfolio"}
+         to={""}
           end
           className={({ isActive }) =>
             isActive ? "text-white" : "text-[#E5F48C]"
@@ -77,49 +78,51 @@ window.matchMedia("max-width: 720px")
         >
           Work
         </NavLink>
-      </nav>):
-      (<div>
-        <button onClick={(e) => hendalclick(e)}>
-          {media ? (
-            <AiOutlineClose className={`text-4xl text-white `} />
-          ) : (
-            <AiOutlineBars className="text-4xl text-white " />
-          )}
-        </button>
-        {media ? (
-          <div>
-            <NavLink
-              to={"/My_portfolio"}
-              className={({ isActive }) =>
-                isActive ? "text-white" : "text-[#E5F48C]"
-              }
-            >
-              home
-            </NavLink>
-            <NavLink
-              to={"/about"}
+      </nav>
+
+
+      {/* // (<div>
+      //   <button onClick={(e) => hendalclick(e)}>
+      //     {media ? (
+      //       <AiOutlineClose className={`text-4xl text-white `} />
+      //     ) : (
+      //       <AiOutlineBars className="text-4xl text-white " />
+      //     )}
+      //   </button>
+      //   {media ? (
+      //     <div>
+      //       <NavLink
+      //         to={"/My_portfolio"}
+      //         className={({ isActive }) =>
+      //           isActive ? "text-white" : "text-[#E5F48C]"
+      //         }
+      //       >
+      //         home
+      //       </NavLink>
+      //       <NavLink
+      //         to={"/about"}
               
-              className={({ isActive }) =>
-                isActive ? "text-white" : "text-[#E5F48C]"
-              }
-            >
-              About
-            </NavLink>
-            <NavLink
+      //         className={({ isActive }) =>
+      //           isActive ? "text-white" : "text-[#E5F48C]"
+      //         }
+      //       >
+      //         About
+      //       </NavLink>
+      //       <NavLink
               
-              to={"/serves"}
-              className={({ isActive }) =>
-                isActive ? "text-white" : "text-[#E5F48C]"
-              }
-            >
-              Serves
-            </NavLink>
-          </div>
-        ) : (
-          " "
-        )}
-      </div>)
-}
+      //         to={"/serves"}
+      //         className={({ isActive }) =>
+      //           isActive ? "text-white" : "text-[#E5F48C]"
+      //         }
+      //       >
+      //         Serves
+      //       </NavLink>
+      //     </div>
+      //   ) : (
+      //     " "
+      //   )}
+      // </div>) */}
+
     </>
   );
 };
