@@ -1,4 +1,129 @@
-import { useState, useEffect } from "react";
+import { react, useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import Mylogo from "./Mylogo.jsx";
+
+import { AiOutlineBars, AiOutlineClose } from "react-icons/ai";
+
+let data = {
+  frist: "Dheerj dwivedi",
+};
+const Header = () => {
+  const [media, setmedai] = useState(false);
+  const [media2, setmedai2] = useState(false);
+
+  let hendalclick = (e) => {
+    setmedai(media === true ? false : true);
+    // setmedai(prev=>!prev);  dusara tarika
+  };
+window.matchMedia("max-width: 720px")
+  return (
+    <>
+     {media?
+      ( <nav
+        className="decoration-none uppercase text-[#E5F48C] p-1.5 
+      m-auto pr-3 mt-1.5 mb-10 w-11/12 text-xl gap-3 h-8 bg-black-950 flex justify-between 
+      items-center font-[Audiowide]"
+      >
+        <NavLink
+          to={"/"}
+          className={({ isActive }) =>
+            isActive ? "text-white" : "text-[#E5F48C]"
+          }
+        >
+          <Mylogo yourlatter={data} className="flex grow-0.4" />
+        </NavLink>
+        <NavLink
+          to={"/"}
+          className={({ isActive }) =>
+            isActive ? "text-white" : "text-[#E5F48C]"
+          }
+        >
+          home
+        </NavLink>
+        <NavLink
+          to={"/about"}
+          target="_blanck"
+          className={({ isActive }) =>
+            isActive ? "text-white" : "text-[#E5F48C]"
+          }
+        >
+          About
+        </NavLink>
+        <NavLink
+          target="_blanck"
+          to={"/serves"}
+          className={({ isActive }) =>
+            isActive ? "text-white" : "text-[#E5F48C]"
+          }
+        >
+          Serves
+        </NavLink>
+        <NavLink
+          target="_blanck"
+          to={"/contant"}
+          className={({ isActive }) =>
+            isActive ? "text-white" : "text-[#E5F48C]"
+          }
+        >
+          contant
+        </NavLink>
+        <NavLink
+          target="_blanck"
+          to={"/mywark"}
+          className={({ isActive }) =>
+            isActive ? "text-white" : "text-[#E5F48C]"
+          }
+        >
+          Work
+        </NavLink>
+      </nav>):
+      (<div>
+        <button onClick={(e) => hendalclick(e)}>
+          {media ? (
+            <AiOutlineClose className={`text-4xl text-white `} />
+          ) : (
+            <AiOutlineBars className="text-4xl text-white " />
+          )}
+        </button>
+        {media ? (
+          <div>
+            <NavLink
+              to={"/"}
+              className={({ isActive }) =>
+                isActive ? "text-white" : "text-[#E5F48C]"
+              }
+            >
+              home
+            </NavLink>
+            <NavLink
+              to={"/about"}
+              target="_blanck"
+              className={({ isActive }) =>
+                isActive ? "text-white" : "text-[#E5F48C]"
+              }
+            >
+              About
+            </NavLink>
+            <NavLink
+              target="_blanck"
+              to={"/serves"}
+              className={({ isActive }) =>
+                isActive ? "text-white" : "text-[#E5F48C]"
+              }
+            >
+              Serves
+            </NavLink>
+          </div>
+        ) : (
+          " "
+        )}
+      </div>)
+}
+    </>
+  );
+};
+export default Header;
+/* import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Mylogo from "./Mylogo.jsx";
 import { AiOutlineBars, AiOutlineClose } from "react-icons/ai";
@@ -88,4 +213,4 @@ export default Header;
 // git commit -m "first commit"
 // git branch -M main
 // git remote add origin https://github.com/dheeraj087/My_portfolio.git
-// git push -u origin main
+// git push -u origin main */
