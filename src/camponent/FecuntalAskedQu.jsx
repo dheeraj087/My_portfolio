@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 
 function FecuntalAskedQu() {
-  let name =1;
+  let name = 1;
   const [Dropicon, setdropicon] = useState([...Array(5)].fill(false));
   const question = {
     Allquestion: [
@@ -26,7 +26,6 @@ function FecuntalAskedQu() {
   };
   const handelclick = (index) => {
     setdropicon((prev) => prev.map((item, i) => (i === index ? !item : item)));
-    
   };
   return (
     <>
@@ -50,29 +49,23 @@ function FecuntalAskedQu() {
       >
         {[...Array(5)].map((_, i) => {
           return (
-            <>
-              <div
-                className={`w-[90%] mb-10 mt-10  m-auto bg-[#0c0c0d] text-xl  text-[#fffdf2cc] rounded-xl  font-bold flex-wrap font-sans leading-8 p-4 flex justify-between `}
-                key={i}
+            <div
+              className={`w-[90%] mb-10 mt-10  m-auto bg-[#0c0c0d] text-xl  text-[#fffdf2cc] rounded-xl  font-bold flex-wrap font-sans leading-8 p-4 flex justify-between `}
+              key={i}
+            >
+              <p>{question.Allquestion[i]}</p>
+              <button
+                onClick={(e) => handelclick(i)}
+                className=" p-0 flex justify-end text-5xl text-end cursor-pointer"
               >
-                <p>{question.Allquestion[i]}</p>
-                <button
-                  onClick={(e) => handelclick(i)}
-                  className=" p-0 flex justify-end text-5xl text-end cursor-pointer"
-                >
-                  {Dropicon[i] ? (
-                    <RiArrowDropDownLine />
-                  ) : (
-                    <RiArrowDropUpLine />
-                  )}
-                </button>
-                {Dropicon[i] && (
-                  <div className="mt-4 text-xl font-normal text-wrap text-[#a2a2a2]">
-                    <p>{question.answer[i]}</p>
-                  </div>
-                )}
-              </div>
-            </>
+                {Dropicon[i] ? <RiArrowDropDownLine /> : <RiArrowDropUpLine />}
+              </button>
+              {Dropicon[i] && (
+                <div className="mt-4 text-xl font-normal text-wrap text-[#a2a2a2]">
+                  <p>{question.answer[i]}</p>
+                </div>
+              )}
+            </div>
           );
         })}
       </div>

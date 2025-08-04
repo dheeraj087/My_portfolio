@@ -23,7 +23,7 @@ const My_work = () => {
         WORK
       </h2>
 
-      <div
+      {/* <div
         className=" group relative w-40 h-60 bg-blue-600 overflow-hidden hover:text-2xl"
         onMouseMove={handleMouseMove1}
       >
@@ -35,7 +35,7 @@ const My_work = () => {
             pointerEvents: "none", 
           }}
         ></div>
-      </div>
+      </div> */}
       <div className={`w-[90%] m-auto grid gap-13 `}>
         <div className={`grid grid-cols-2 gap-13 `}>
           <MaskEffect />

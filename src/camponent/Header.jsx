@@ -26,6 +26,7 @@ window.matchMedia("max-width: 720px")
       >
         <NavLink
           to={"/"}
+          end
           className={({ isActive }) =>
             isActive ? "text-white" : "text-[#E5F48C]"
           }
@@ -34,6 +35,7 @@ window.matchMedia("max-width: 720px")
         </NavLink>
         <NavLink
           to={"/"}
+          end
           className={({ isActive }) =>
             isActive ? "text-white" : "text-[#E5F48C]"
           }
@@ -42,7 +44,6 @@ window.matchMedia("max-width: 720px")
         </NavLink>
         <NavLink
           to={"/about"}
-          target="_blanck"
           className={({ isActive }) =>
             isActive ? "text-white" : "text-[#E5F48C]"
           }
@@ -50,7 +51,7 @@ window.matchMedia("max-width: 720px")
           About
         </NavLink>
         <NavLink
-          target="_blanck"
+          
           to={"/serves"}
           className={({ isActive }) =>
             isActive ? "text-white" : "text-[#E5F48C]"
@@ -59,7 +60,7 @@ window.matchMedia("max-width: 720px")
           Serves
         </NavLink>
         <NavLink
-          target="_blanck"
+          
           to={"/contant"}
           className={({ isActive }) =>
             isActive ? "text-white" : "text-[#E5F48C]"
@@ -68,7 +69,7 @@ window.matchMedia("max-width: 720px")
           contant
         </NavLink>
         <NavLink
-          target="_blanck"
+          
           to={"/mywark"}
           className={({ isActive }) =>
             isActive ? "text-white" : "text-[#E5F48C]"
@@ -97,7 +98,7 @@ window.matchMedia("max-width: 720px")
             </NavLink>
             <NavLink
               to={"/about"}
-              target="_blanck"
+              
               className={({ isActive }) =>
                 isActive ? "text-white" : "text-[#E5F48C]"
               }
@@ -105,7 +106,7 @@ window.matchMedia("max-width: 720px")
               About
             </NavLink>
             <NavLink
-              target="_blanck"
+              
               to={"/serves"}
               className={({ isActive }) =>
                 isActive ? "text-white" : "text-[#E5F48C]"

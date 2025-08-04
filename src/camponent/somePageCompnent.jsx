@@ -88,3 +88,4 @@ function AboutLink() {
 //     </>
 //   );
 // }
+export default AboutLink;
