@@ -29,7 +29,7 @@ function Footer() {
           <li className="text-right text-4xl mb-7 cursor-pointer ">
             {" "}
             <NavLink
-              to={"/"}
+              to={"/My_portfolio"}
               end
               className={({ isActive }) =>
                 isActive ? "text-white" : "text-[#E5F48C]"
