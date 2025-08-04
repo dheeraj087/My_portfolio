@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/My_portfolio" element={<HomePage />} />
           <Route
             path="/about"
             element={<About Extra={true} textCss={"text-[230px]"} />}
@@ -25,7 +25,7 @@ function App() {
           <Route path="/contant" element={<ContactForm />} />
           <Route path="/mywark" element={<My_work />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </>
   );
