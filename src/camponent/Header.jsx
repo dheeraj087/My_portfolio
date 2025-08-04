@@ -22,7 +22,7 @@ window.matchMedia("max-width: 720px")
      {/* {media? */}
        <nav
         className="decoration-none uppercase text-[#E5F48C] p-1.5 
-      m-auto pr-3 mt-3.5 mb-10 w-11/12 text-2xl gap-3 h-8 bg-black-950 flex justify-between 
+      m-auto pr-3 mt-3.5 md: mb-10 w-11/12 text-2xl gap-3 h-8 bg-black-950 flex justify-between 
       items-center font-[Audiowide]"
       >
         <NavLink
