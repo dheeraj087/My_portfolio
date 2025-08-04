@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
- "homepage": "https://dheerajdwivedi.github.io/My_portfolio",
+ "homepage": "https://dheeraj087.github.io/My_portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

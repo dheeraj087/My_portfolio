@@ -13,17 +13,17 @@ function App() {
       <BrowserRouter basename="/My_portfolio">
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/My_portfolio/" element={<HomePage />} />
           <Route
-            path="/about"
+            path="/My_portfolio/about"
             element={<About Extra={true} textCss={"text-[230px]"} />}
           />
           <Route
-            path="/serves"
+            path="/My_portfolio/serves"
             element={<Serves active={{ textCss: "text-[162px] leading-35" }} />}
           />
-          <Route path="/contant" element={<ContactForm />} />
-          <Route path="/mywark" element={<My_work />} />
+          <Route path="/My_portfolio/contant" element={<ContactForm />} />
+          <Route path="/My_portfolio/mywark" element={<My_work />} />
         </Routes>
         <Footer />
       </BrowserRouter>
