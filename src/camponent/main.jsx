@@ -66,7 +66,7 @@ const Main = () => {
         <p>2025</p>
       </div>
 
-      <div className="w-[90%] max-w-6xl mx-auto my-10 grid grid-cols-2 grid-rows-2 gap-3 -gap-y-px">
+      <div className="w-[90%] max-w-6xl mx-auto my-10 grid grid-cols-2 grid-rows-2 md:gap-3 gap-4 gap-y-px ">
         <Box
           icon={{
             icon: icons[0].icon,

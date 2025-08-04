@@ -55,7 +55,7 @@ const About = ({ Extra, textCss }) => {
   const glowRefs = useRef([null]);
   return (
     <>
-      <div className=" w-full h-[100%] mt mb-10">
+      <div className=" w-full h-[100%] sm:my-0 -my-10 mb-10">
         {Extra && (
           <>
             {/* <AboutLink /> */}
@@ -63,7 +63,7 @@ const About = ({ Extra, textCss }) => {
           </>
         )}
         <h2
-          className={`block font-[Audiowide] text-[#E5F48C] text-7xl ml-4 ${
+          className={`block font-[Audiowide] text-[#E5F48C]  text-7xl ml-4 ${
             textCss ? textCss : ""
           }`}
         >
