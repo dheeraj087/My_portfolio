@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import About from "./About.jsx";
 import Header from "./Header.jsx";
 import HomePage from "../somePagesOfwebsite/HomePage.jsx";
@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter basename="/My_portfolio">
         <Header />
         <Routes>
-          <Route path="/My_portfolio" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route
             path="/about"
             element={<About Extra={true} textCss={"text-[230px]"} />}
