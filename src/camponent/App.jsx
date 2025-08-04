@@ -10,7 +10,7 @@ import Footer from "./Footer.jsx";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/My_portfolio">
         <Header />
         <Routes>
           <Route path="/My_portfolio" element={<HomePage />} />
