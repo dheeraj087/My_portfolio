@@ -26,6 +26,7 @@ function App() {
           <Route path="/mywark" element={<My_work />} />
         </Routes>
         <Footer />
+        
       </BrowserRouter>
     </>
   );
