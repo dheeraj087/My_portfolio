@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "fdeploy": "npm run build && npm run deploy && git add . && git commit -m \"auto deploy\" && git push origin main"
+    "fdeploy": " set /p msg=\"Enter commit message: \"npm run build && npm run deploy && git add . && git commit -m \"%msg%\" && git push origin main",
+    "optdep": "cmd /c deploy.bat"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.8",
