@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Box, Box2 } from "./box";
 import { RiArrowDownCircleFill } from "react-icons/ri";
-// import { AboutLink, AboutLink1 } from "./somePageCompnent";
+import AboutLink from "./somePageCompnent";
 
 const skills = [
   { name: "Re", angle: 0 },
@@ -58,7 +58,7 @@ const About = ({ Extra, textCss }) => {
       <div className=" w-full h-[100%] mt mb-10">
         {Extra && (
           <>
-            {/* <AboutLink /> */}
+            <AboutLink />
             ""
           </>
         )}

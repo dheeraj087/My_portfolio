@@ -26,7 +26,7 @@ window.matchMedia("max-width: 720px")
       items-center font-[Audiowide]"
       >
         <NavLink
-         to={"/My_portfolio/"}
+         to={"/"}
           end
           className={({ isActive }) =>
             isActive ? "text-white" : "text-[#E5F48C]"
@@ -35,7 +35,7 @@ window.matchMedia("max-width: 720px")
           <Mylogo yourlatter={data} className="flex grow-0.4" />
         </NavLink>
         <NavLink
-          to={"/My_portfolio/"}
+          to={"/"}
           end
           className={({ isActive }) =>
             isActive ? "text-white" : "text-[#E5F48C]"

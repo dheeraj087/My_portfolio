@@ -1,5 +1,4 @@
-import fiFaFigma from "react-icons/fa";
-import Adarsh from "../asscts/man1.png";
+// import fiFaFigma from "react-icons/fa";
 import {
   RiCss3Fill,
   RiHtml5Fill,
@@ -8,6 +7,7 @@ import {
   RiTailwindCssFill,
 } from "react-icons/ri";
 import HeroSection from "./particalbg";
+import Adarsh from "../asscts/man1.png";
 
 function AboutLink() {
   return (
@@ -20,7 +20,7 @@ function AboutLink() {
     </div>
   );
 }
-
+export default AboutLink;
 // function Exprience() {
 //   return (
 //   <>
@@ -88,4 +88,3 @@ function AboutLink() {
 //     </>
 //   );
 // }
-export default AboutLink;

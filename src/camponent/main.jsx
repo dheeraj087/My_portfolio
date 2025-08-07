@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import "../index.css";
 import { FaArrowAltCircleRight, FaFileDownload } from "react-icons/fa";
+import mean2 from "../asscts/mean2.png"
+import man1 from "../asscts/man1.png"
 import {
   RiDownload2Line,
   RiFacebookFill,
@@ -17,13 +19,13 @@ const Main = () => {
 
   const handleMouseEnter = () => {
     if (imgRef.current) {
-      imgRef.current.src = "../src/asscts/man1.png";
+      imgRef.current.src = man1;
     }
   };
 
   const handleMouseLeave = () => {
     if (imgRef.current) {
-      imgRef.current.src = "../src/asscts/mean2.png";
+      imgRef.current.src = mean2;
     }
   };
   const icons = [
@@ -61,7 +63,7 @@ const Main = () => {
         <p>IN INDIA</p>
         <button className="text-xl text-[#282828] absolute ml-60 text-center bg-[#e9ff6b] block cursor-pointer p-3 border rounded-4xl hover:skew-6 hover:origin-center  active:shadow-[inset_2px_0px_10px_0px_red,2px_0px_8px_0px_yellow] active:scale-[0.9] ">
           <RiDownload2Line className="inline mr-2.5 text-3xl" />
-          <a href="/assets/Dhiraj_Kumar_Resume.pdf">Resume</a>
+          <a href="/My_portfolio/assets/Dhiraj_Kumar_Resume.pdf" download >Resume</a>
         </button>
         <p>2025</p>
       </div>
@@ -82,7 +84,7 @@ const Main = () => {
         >
           <img
             ref={imgRef}
-            src="../src/asscts/mean2.png"
+            src={mean2}
             alt="main png img"
             className="absolute z-10 w-2/4 -top-45 right-7"
           />

@@ -36,7 +36,7 @@ const MaskEffect = ({ data }) => {
     >
       {/* Main UI (Image or App) */}
       <img
-        src="/Adarsh.png"
+        src="/My_portfolio/assets/Adarsh.png"
         alt="App"
         className="w-[220px] rounded-xl z-10 relative"
       />

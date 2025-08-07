@@ -21,15 +21,15 @@ function Footer() {
           >
             FOLIO
           </p>
-          <p className="text-xl text-white text-right mt-16 -mb-6">
+          <p className="mt-16 -mb-6 text-xl text-right text-white">
             copyright@2025 Dheeraj dwivedi All Right Reserved
           </p>
         </div>
         <ul>
-          <li className="text-right text-4xl mb-7 cursor-pointer ">
+          <li className="text-4xl text-right cursor-pointer mb-7 ">
             {" "}
             <NavLink
-              to={"/My_portfolio"}
+              to={"/"}
               end
               className={({ isActive }) =>
                 isActive ? "text-white" : "text-[#E5F48C]"
@@ -38,7 +38,7 @@ function Footer() {
               home
             </NavLink>
           </li>
-          <li className="text-right text-4xl mb-7 cursor-pointer ">
+          <li className="text-4xl text-right cursor-pointer mb-7 ">
             {" "}
             <NavLink
               to={"/about"}
@@ -49,7 +49,7 @@ function Footer() {
               About
             </NavLink>
           </li>
-          <li className="text-right text-4xl mb-7 cursor-pointer ">
+          <li className="text-4xl text-right cursor-pointer mb-7 ">
             <NavLink
               to={"/serves"}
               className={({ isActive }) =>
@@ -59,7 +59,7 @@ function Footer() {
               Serves
             </NavLink>
           </li>
-          <li className="text-right text-4xl mb-7 cursor-pointer ">
+          <li className="text-4xl text-right cursor-pointer mb-7 ">
             {" "}
             <NavLink
               to={"/mywark"}
@@ -70,7 +70,7 @@ function Footer() {
               Work
             </NavLink>
           </li>
-          <li className="text-right text-4xl mb-7 cursor-pointer ">
+          <li className="text-4xl text-right cursor-pointer mb-7 ">
             {" "}
             <NavLink
               to={"/contant"}

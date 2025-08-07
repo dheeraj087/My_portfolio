@@ -49,7 +49,7 @@ const Serves = ({active}) => {
             }}
           />
         </div>
-        <div className="grid grid-cols-4 w-full gap-4">
+        <div className="grid w-full grid-cols-4 gap-4">
           <ServesBox
             icon={{
               glowRefs: glowRefs,
@@ -148,7 +148,7 @@ const Serves = ({active}) => {
             css: " block text-left w-20 absolute whitespace-break-spaces break-word left-7 top-7 text-wrap text-5xl font-bold text-white",
             istext: false,
           }}
-          className="scroll-animation invisible"
+          className="invisible scroll-animation"
         />
       </div>
       {/* // TESTIMON IALS */}
@@ -168,7 +168,7 @@ const Serves = ({active}) => {
           contant={{
             work: "Developer",
             name: "Ajay",
-            img: "/ajay.png",
+            img: "/My_portfolio/assets/ajay.png",
             workdis: "Ajay is a design genius!",
             discription:
               "This is unbelievable. He is too fast and he work with details. I will hire him again.Highly recommend!",
@@ -179,7 +179,7 @@ const Serves = ({active}) => {
           contant={{
             work: "Designer",
             name: "Adarsh",
-            img: "/Adarsh.png",
+            img: "/My_portfolio/assets/Adarsh.png",
             workdis: "Adarsh is a design genius!",
             discription:
               "Adarsh was a game-changer for our online store. They designed a websiti that perfectly captures our brand's identity",
@@ -190,7 +190,7 @@ const Serves = ({active}) => {
           contant={{
             work: "Designer",
             name: "Dheeraj dwivedi",
-            img: "/dheeraj.jpg",
+            img: "/My_portfolio/assets/dheeraj.jpg",
             workdis: "Dheeraj is a design genius!",
             discription:
               "Dheeraj was a game-changer for our online store. They designed a websiti that perfectly captures our brand's identity",
