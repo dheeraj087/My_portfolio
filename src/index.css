@@ -5,6 +5,7 @@
 body {
   background-color: #161618;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 @keyframes roto {
   to {
@@ -14,7 +15,6 @@ body {
     transform: rotate(315deg);
   }
 }
-/* If not using Tailwind plugin */
 
 .animate-gradient-x{
    animation: lefty 4.5s linear infinite alternate;

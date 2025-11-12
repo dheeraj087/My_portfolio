@@ -25,8 +25,7 @@ function App() {
           <Route path="/contant" element={<ContactForm />} />
           <Route path="/mywark" element={<My_work />} />
         </Routes>
-        <Footer />
-        
+        <Footer/>
       </BrowserRouter>
     </>
   );

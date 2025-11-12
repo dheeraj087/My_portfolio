@@ -57,12 +57,14 @@ const Main = () => {
 
   return (
     <main className="w-screen font-[Audiowide] mb-2 text-white bg-[#161618] min-h-screen">
-      <div className="relative m-auto mt-10 rounded-xl h-110 p-6 bg-[#19191C] border border-[#6161615f] text-[#e5f48c] text-right text-5xl font-extrabold md:leading-25  sm:text-7xl md:text-9xl w-10/12 ">
+      <div className="relative m-auto mt-10 rounded-xl h-110 p-6 bg-[#19191C] border border-[#6161615f] text-[#e5f48c] text-right text-5xl font-extrabold md:leading-25  sm:text-7xl md:text-9xl w-10/12 max-sm:text-4xl max-sm:h-66 ">
         <p>DHEERAJ</p>
         <p>WEB DEV</p>
         <p>IN INDIA</p>
-        <button className="text-xl text-[#282828] absolute ml-60 text-center bg-[#e9ff6b] block cursor-pointer p-3 border rounded-4xl hover:skew-6 hover:origin-center  active:shadow-[inset_2px_0px_10px_0px_red,2px_0px_8px_0px_yellow] active:scale-[0.9] ">
-          <RiDownload2Line className="inline mr-2.5 text-3xl" />
+        <button className="text-xl text-[#282828] absolute ml-60 text-center bg-[#e9ff6b] block cursor-pointer p-3 border rounded-4xl hover:skew-6 hover:origin-center  active:shadow-[inset_2px_0px_10px_0px_red,2px_0px_8px_0px_yellow] active:scale-[0.9] max-sm:ml-4 max-sm:text-[10px]  "
+
+        >
+          <RiDownload2Line className="inline mr-1.5 text-1xl" />
           <a href="/My_portfolio/assets/Dhiraj_Kumar_Resume.pdf" download >Resume</a>
         </button>
         <p>2025</p>
