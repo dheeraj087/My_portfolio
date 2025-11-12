@@ -24,7 +24,6 @@ const Header = () => {
     else {
       setmedai(true)
     }
-    console.log(media);
   },[])
 
   return (
@@ -195,7 +194,7 @@ export default Header;
 // import { useEffect, useState } from "react";
 // import { NavLink } from "react-router-dom";
 // import Mylogo from "./Mylogo.jsx";
-// import { AiOut lineBars, AiOutlineClose } from "react-icons/ai";
+// import { AiOutlineBars, AiOutlineClose } from "react-icons/ai";
 
 // let data = {
 //   frist: "Dheerj dwivedi",

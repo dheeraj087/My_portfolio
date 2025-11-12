@@ -11,12 +11,14 @@ import {
 } from "react-icons/ri";
 
 import { Box } from "./box";
-import ParticlesBackground from "./particalbg";
+import { Mediahook } from "../responsive hook/midea";
 
 const Main = () => {
   const imgRef = useRef(null);
   const glowRefs = useRef([null]);
+ let isMobile = Mediahook('720px')
 
+ 
   const handleMouseEnter = () => {
     if (imgRef.current) {
       imgRef.current.src = man1;
@@ -70,15 +72,16 @@ const Main = () => {
         <p>2025</p>
       </div>
 
-      <div className="w-[90%] max-w-6xl mx-auto my-10 grid grid-cols-2 grid-rows-2 md:gap-3 gap-4 gap-y-px ">
-        <Box
+      <div className="w-[90%] max-w-6xl mx-auto my-10 grid-cols-2 grid max-sm:grid-cols-1 grid-rows-1 max-sm:grid-rows-1 md:gap-3 gap-4 max-sm:gap-y-5 gap-y-px ">
+        
+        { isMobile ? "" : <Box
           icon={{
             icon: icons[0].icon,
             index: 0,
             glowRefs: glowRefs,
             istext: false,
           }}
-        />
+        />}
         <div
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
@@ -95,6 +98,14 @@ const Main = () => {
             <FaArrowAltCircleRight />
           </button>
         </div>
+         { isMobile ?  <Box
+          icon={{
+            icon: icons[0].icon,
+            index: 0,
+            glowRefs: glowRefs,
+            istext: false,
+          }}
+        />:""}
         <Box
           icon={{
             icon: icons[1].icon,
