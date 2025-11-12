@@ -195,7 +195,7 @@ export default Header;
 // import { useEffect, useState } from "react";
 // import { NavLink } from "react-router-dom";
 // import Mylogo from "./Mylogo.jsx";
-// import { AiOutlineBars, AiOutlineClose } from "react-icons/ai";
+// import { AiOut lineBars, AiOutlineClose } from "react-icons/ai";
 
 // let data = {
 //   frist: "Dheerj dwivedi",
