@@ -59,7 +59,7 @@ const Main = () => {
 
   return (
     <main className="w-screen font-[Audiowide] mb-2 text-white bg-[#161618] min-h-screen">
-      <div className="relative m-auto mt-10 rounded-xl h-110 p-6 bg-[#19191C] border border-[#6161615f] text-[#e5f48c] text-right text-5xl font-extrabold md:leading-25  sm:text-7xl md:text-9xl w-10/12 max-sm:text-4xl max-sm:h-66 ">
+      <div className="relative m-auto mt-10 rounded-xl h-110 p-6 bg-[#19191C] border border-[#6161615f] text-[#e5f48c] text-right text-5xl font-extrabold md:leading-25  sm:text-7xl md:text-9xl w-10/12 max-sm:w-[94%] max-sm:text-4xl max-sm:h-66 ">
         <p>DHEERAJ</p>
         <p>WEB DEV</p>
         <p>IN INDIA</p>
@@ -91,7 +91,7 @@ const Main = () => {
             ref={imgRef}
             src={mean2}
             alt="main png img"
-            className="absolute z-10 w-2/4 -top-45 right-7"
+            className="absolute z-10 w-2/4 -top-57 right-7  max-sm:w-2/3 max-sm-top-50 max-sm-right-11"
           />
           <p className="text-7xl">Let's</p> <p className="text-7xl">Talk</p>
           <button className="absolute text-gray-800 right-2 bottom-2 text-9xl">
