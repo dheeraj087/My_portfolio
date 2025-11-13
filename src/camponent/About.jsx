@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { Box, Box2 } from "./box";
 import { RiArrowDownCircleFill } from "react-icons/ri";
 import AboutLink from "./somePageCompnent";
+import { NavLink } from "react-router-dom";
 
 const skills = [
   { name: "Re", angle: 0 },
@@ -63,16 +64,14 @@ const About = ({ Extra, textCss }) => {
           </>
         )}
         <h2
-          className={`block font-[Audiowide] text-[#E5F48C] text-7xl max-sm:text-6xl ml-4 ${
-            textCss ? textCss : ""
-          }`}
+          className={`block font-[Audiowide] text-[#E5F48C] text-7xl max-sm:text-6xl ml-4 ${textCss ? textCss : ""
+            }`}
         >
           ABOUT
         </h2>
         <h2
-          className={`block font-[Audiowide] text-[#E5F48C] text-7xl ml-4 max-sm:text-6xl ${
-            textCss ? textCss : ""
-          }`}
+          className={`block font-[Audiowide] text-[#E5F48C] text-7xl ml-4 max-sm:text-6xl ${textCss ? textCss : ""
+            }`}
         >
           ME
         </h2>
@@ -113,7 +112,7 @@ const About = ({ Extra, textCss }) => {
               driction: " flex-row",
               discription:
                 "Hello, I'm Dheeraj Dwivedi, a UI/UX designer with a passion for creating beautiful and user-friendly digital experiences. Proficient in Figma, Framer, and Tailwind, I specialize in empathetic design, ensuring that every interface I craft not only looks great but also feels intuitive.",
-              classdis: "text-2xl max-sm:text-[16px] w-[70%] text-white text-center ",
+              classdis: "text-2xl max-sm:text-[12px] w-[80%] text-white text-center max-sm:mr-2",
               font: ["Audiowide", "sans-serif"],
               index: 6,
               glowRefs: glowRefs,
@@ -124,26 +123,29 @@ const About = ({ Extra, textCss }) => {
           />
         </div>
         <div className="w-[90%] m-auto ">
-          <Box
-            icon={{
-              color: "#e5f48c",
-              driction: " flex-row justify-between",
-              icon: (
-                <RiArrowDownCircleFill
-                  className="group-hover:text-white group-hover:text-[132px] 
+          <NavLink to={"/contant"}>
+            <Box
+              icon={{
+                color: "#e5f48c",
+                driction: " flex-row justify-between",
+                icon: (
+                  <RiArrowDownCircleFill
+                    className="group-hover:text-white group-hover:text-[132px] 
                       rounded-full group-hover:bg-transparent transition-all duration-500 text-9xl  overflow-hidden  text-[#6a6a6a] absolute right-2 bottom-2 justify-between"
-                />
-              ),
-              font: ["Audiowid", "sans-serif"],
-              index: 7,
-              glowRefs: glowRefs,
-              classabout: "text-3xl mr-20 mb-9",
-              text: "Let'S Tolks ",
-              css: " block text-left w-20 absolute whitespace-break-spaces break-word left-7 top-7 text-wrap text-5xl font-bold text-white",
-              istext: false,
-            }}
-            className="invisible scroll-animation"
-          />
+                  />
+                ),
+                font: ["Audiowid", "sans-serif"],
+                index: 7,
+                glowRefs: glowRefs,
+                classabout: "text-3xl mr-20 mb-9",
+                text: "Let'S Tolks ",
+                css: " block text-left w-20 absolute whitespace-break-spaces break-word left-7 top-7 text-wrap text-5xl font-bold text-white",
+                istext: false,
+              }}
+              className="invisible scroll-animation"
+            />
+
+          </NavLink>
         </div>
         {/* {Extra ? <AboutLink1 /> : ""} */}
       </div>

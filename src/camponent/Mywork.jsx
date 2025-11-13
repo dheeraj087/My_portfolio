@@ -38,20 +38,20 @@ const My_work = () => {
       </div> */}
       <div className={`w-[90%] m-auto grid gap-13 max-sm:gap-y-5 `}>
         <div className={`grid grid-cols-2 max-sm:grid-cols-1 gap-13 max-sm:gap-y-5 `}>
-          <MaskEffect />
-          <MaskEffect />
+          <MaskEffect img="/My_portfolio/assets/fur.jpg" />
+          <MaskEffect img="/My_portfolio/assets/desiner.jpg" />
         </div>
-        <div className={`grid grid-cols-1 gap-13 max-sm:gap-y-5`}>
-          <MaskEffect data={{css:"w-full max-sm:w-[90%]"}}/>
-        </div>
+        {/* <div className={`grid grid-cols-1 gap-13 max-sm:gap-y-5`}>
+          <MaskEffect data={{css:"w-full max-sm:w-[90%]"}} img="/My_portfolio/assets/Adarsh.png" />
+        </div> */}
 
         <div className={`grid grid-cols-2 max-sm:grid-cols-1 gap-13 max-sm:gap-y-5`}>
-          <MaskEffect />
-          <MaskEffect />
+          <MaskEffect img="/My_portfolio/assets/buld.jpg" />
+          <MaskEffect img="/My_portfolio/assets/images.jpg" />
         </div>
         <div className={ `grid grid-cols-2 max-sm:grid-cols-1 gap-13 max-sm:gap-y-5 `}>
-          <MaskEffect />
-          <MaskEffect />
+          <MaskEffect img="/My_portfolio/assets/primum.jpg" />
+          <MaskEffect img="/My_portfolio/assets/image.jpg" />
         </div>
       </div>
     </>

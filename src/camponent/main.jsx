@@ -12,13 +12,14 @@ import {
 
 import { Box } from "./box";
 import { Mediahook } from "../responsive hook/midea";
+import { NavLink } from "react-router-dom";
 
 const Main = () => {
   const imgRef = useRef(null);
   const glowRefs = useRef([null]);
- let isMobile = Mediahook('720px')
+  let isMobile = Mediahook('720px')
 
- 
+
   const handleMouseEnter = () => {
     if (imgRef.current) {
       imgRef.current.src = man1;
@@ -73,19 +74,27 @@ const Main = () => {
       </div>
 
       <div className="w-[90%] max-w-6xl mx-auto my-10 grid-cols-2 grid max-sm:grid-cols-1 grid-rows-1 max-sm:grid-rows-1 md:gap-3 gap-4 max-sm:gap-y-5 gap-y-px ">
-        
-        { isMobile ? "" : <Box
+
+        {isMobile ? "" : 
+          <NavLink to={"https://share.google/MqFC02p8Yr925somY"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+ <Box
           icon={{
             icon: icons[0].icon,
             index: 0,
             glowRefs: glowRefs,
             istext: false,
           }}
-        />}
+        />
+          
+        </NavLink>
+         }
         <div
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className="relative h-70 w-full bg-[#C2B5F5] text-black p-4 text-3xl border-[#51515193] border-2 font-serif rounded-[10px] hover:text-2xl hover:bg-white hover:text-[#a8a1c1]"
+          className="relative  h-70 w-full bg-[#C2B5F5] text-black p-4 text-3xl border-[#51515193] border-2 font-serif rounded-[10px] hover:text-2xl hover:bg-white hover:text-[#a8a1c1]"
         >
           <img
             ref={imgRef}
@@ -94,27 +103,47 @@ const Main = () => {
             className="absolute z-10 w-2/4 -top-57 right-7  max-sm:w-2/3 max-sm-top-50 max-sm-right-11"
           />
           <p className="text-7xl">Let's</p> <p className="text-7xl">Talk</p>
-          <button className="absolute text-gray-800 right-2 bottom-2 text-9xl">
-            <FaArrowAltCircleRight />
-          </button>
+          <NavLink to={"/contant"}>
+            <button className="absolute text-gray-800 right-2 cursor-pointer bottom-2 text-9xl">
+              <FaArrowAltCircleRight className="cursor-pointer" />
+            </button>
+          </NavLink>
         </div>
-         { isMobile ?  <Box
+        {isMobile ? <NavLink to={"https://share.google/MqFC02p8Yr925somY"}
+
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+<Box
           icon={{
             icon: icons[0].icon,
             index: 0,
             glowRefs: glowRefs,
             istext: false,
           }}
-        />:""}
-        <Box
-          icon={{
-            icon: icons[1].icon,
-            index: 1,
-            glowRefs: glowRefs,
-            istext: false,
-          }}
         />
-        <Box
+          
+        </NavLink> : ""}
+        <NavLink 
+        to={"https://www.instagram.com/dheerajdwivedi141?utm_source=qr&igsh=MTV4aW85aDFuc3Bydg=="}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <Box
+            icon={{
+              icon: icons[1].icon,
+              index: 1,
+              glowRefs: glowRefs,
+              istext: false,
+            }}
+          />
+        </NavLink>
+<NavLink to={"https://www.facebook.com/dheeraj.dwivedi.104"} 
+  target="_blank"
+  rel="noopener noreferrer"
+> 
+          <Box
           icon={{
             icon: icons[2].icon,
             index: 2,
@@ -122,6 +151,8 @@ const Main = () => {
             istext: false,
           }}
         />
+        </NavLink>
+        
       </div>
     </main>
   );

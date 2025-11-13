@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+/* import React, { useEffect, useState } from "react";
 
 const OfflinePage = () => {
   const [isOnline, setIsOnline] = useState(navigator.onLine);
@@ -18,7 +18,6 @@ const OfflinePage = () => {
 
   if (!isOnline) {
 
-   
     return (
       <div
         style={{
@@ -59,3 +58,4 @@ const OfflinePage = () => {
 };
 
 export default OfflinePage;
+ */

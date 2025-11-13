@@ -11,6 +11,7 @@ import {
 } from "react-icons/ri";
 import ContactForm from "./contant.jsx";
 import FecuntalAskedQu from "./FecuntalAskedQu.jsx";
+import { NavLink } from "react-router-dom";
 
 const Serves = ({active}) => {
   const glowRefs = useRef([]);
@@ -130,7 +131,8 @@ const Serves = ({active}) => {
       </h2>
 
       <div className="w-[90%] m-auto mb-40">
-        <Box
+        <NavLink to={"/contant"} >
+ <Box
           icon={{
             color: "#e5f48c",
             driction: " flex-row justify-between",
@@ -150,6 +152,9 @@ const Serves = ({active}) => {
           }}
           className="invisible scroll-animation"
         />
+          
+        </NavLink>
+       
       </div>
       {/* // TESTIMON IALS */}
 
