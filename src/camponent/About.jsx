@@ -63,21 +63,21 @@ const About = ({ Extra, textCss }) => {
           </>
         )}
         <h2
-          className={`block font-[Audiowide] text-[#E5F48C] text-7xl ml-4 ${
+          className={`block font-[Audiowide] text-[#E5F48C] text-7xl max-sm:text-6xl ml-4 ${
             textCss ? textCss : ""
           }`}
         >
           ABOUT
         </h2>
         <h2
-          className={`block font-[Audiowide] text-[#E5F48C] text-7xl ml-4 ${
+          className={`block font-[Audiowide] text-[#E5F48C] text-7xl ml-4 max-sm:text-6xl ${
             textCss ? textCss : ""
           }`}
         >
           ME
         </h2>
         {/* ye exprience section hai */}
-        <div className="w-[90%] max-w-6xl mx-auto my-10 h-auto flex gap-5 m-4">
+        <div className="w-[90%] max-w-6xl mx-auto my-10 h-auto max-sm:block flex gap-5 m-4">
           <Box
             icon={{
               color: "#e5f48c",
@@ -113,12 +113,12 @@ const About = ({ Extra, textCss }) => {
               driction: " flex-row",
               discription:
                 "Hello, I'm Dheeraj Dwivedi, a UI/UX designer with a passion for creating beautiful and user-friendly digital experiences. Proficient in Figma, Framer, and Tailwind, I specialize in empathetic design, ensuring that every interface I craft not only looks great but also feels intuitive.",
-              classdis: "text-2xl w-[70%] text-white text-center ",
+              classdis: "text-2xl max-sm:text-[16px] w-[70%] text-white text-center ",
               font: ["Audiowide", "sans-serif"],
               index: 6,
               glowRefs: glowRefs,
               text2: "About Me",
-              classabout: "text-3xl mr-20 mb-9",
+              classabout: "text-3xl max-sm:text-[20px] mr-20 max-sm:ml-4 mb-9",
               text: "1",
             }}
           />

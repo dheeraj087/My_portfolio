@@ -30,22 +30,22 @@ function FecuntalAskedQu() {
   return (
     <>
       <h2
-        className={`text-[102px] mt-15 w-full overflow-hidden whitespace-break-spaces pl-15 text-left text-[#787878] leading-22 tracking-[-3px] font-normal mb-2 font-['Audiowide',"sain-serif"] `}
+        className={`text-[102px] max-sm:text-4xl max-sm:leading-9 max-sm:pl-5 max-sm:mt-10 mt-15  w-full overflow-hidden whitespace-break-spaces pl-15 text-left text-[#787878] leading-22 tracking-[-3px] font-normal mb-2 font-['Audiowide',"sain-serif"] `}
       >
         FREQUENTLY
       </h2>
       <h2
-        className={`text-[102px] w-full overflow-hidden whitespace-break-spaces pl-15 text-left text-[#787878] leading-22 tracking-[-3px] font-normal mb-2 font-['Audiowide',"sain-serif"] `}
+        className={`text-[102px] max-sm:text-4xl max-sm:leading-9 max-sm:pl-5 w-full overflow-hidden whitespace-break-spaces pl-15 text-left text-[#787878] leading-22 tracking-[-3px] font-normal mb-2 font-['Audiowide',"sain-serif"] `}
       >
         ASKED
       </h2>
       <h2
-        className={`text-[102px] w-full overflow-hidden whitespace-break-spaces pl-15 text-left text-[#787878] leading-22 tracking-[-3px] font-normal mb-8 font-['Audiowide',"sain-serif"] `}
+        className={`text-[102px] max-sm:text-4xl max-sm:leading-9 max-sm:pl-5 w-full overflow-hidden whitespace-break-spaces pl-15 text-left text-[#787878] leading-22 tracking-[-3px] font-normal mb-8 font-['Audiowide',"sain-serif"] `}
       >
         QUESTIONS
       </h2>
       <div
-        className={`w-[90%] mb-8 m-auto bg-[#1A1A1D] border-2 border-[#27272A] rounded-2xl`}
+        className={`w-[90%] max-sm:w-[93%] mb-8 m-auto bg-[#1A1A1D] border-2 border-[#27272A] rounded-2xl`}
       >
         {[...Array(5)].map((_, i) => {
           return (
@@ -53,10 +53,10 @@ function FecuntalAskedQu() {
               className={`w-[90%] mb-10 mt-10  m-auto bg-[#0c0c0d] text-xl  text-[#fffdf2cc] rounded-xl  font-bold flex-wrap font-sans leading-8 p-4 flex justify-between `}
               key={i}
             >
-              <p>{question.Allquestion[i]}</p>
+              <p className="max-sm:text-[12px]">{question.Allquestion[i]}</p>
               <button
                 onClick={(e) => handelclick(i)}
-                className=" p-0 flex justify-end text-5xl text-end cursor-pointer"
+                className=" p-0 flex justify-end text-5xl max-sm:text-2xl text-end cursor-pointer"
               >
                 {Dropicon[i] ? <RiArrowDropDownLine /> : <RiArrowDropUpLine />}
               </button>

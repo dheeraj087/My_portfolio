@@ -1,5 +1,4 @@
 import About from "../camponent/About";
-import Footer from "../camponent/Footer";
 import Main from "../camponent/main";
 import My_work from "../camponent/Mywork";
 import Serves from "../camponent/Serves";

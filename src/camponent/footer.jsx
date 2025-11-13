@@ -7,26 +7,26 @@ function Footer() {
       <div className="w-[90%] relative m-auto text-amber-100 flex p-6 rounded-2xl mb-0 gap-10">
         <div className="grow-[0.7]">
           <p
-            className={`text-right m-2 text-[102px] text-[#E5F48C] leading-26 font-['Audiowide',"sain-serif"]`}
+            className={`text-right m-2 text-[102px] max-sm:text-2xl max-sm:leading-15   text-[#E5F48C] leading-26 font-['Audiowide',"sain-serif"]`}
           >
             DHEERAJ
           </p>
           <p
-            className={`text-right m-2 text-[102px] text-[#E5F48C] leading-26 font-['Audiowide',"sain-serif"]`}
+            className={`text-right m-2 text-[102px] max-sm:text-2xl max-sm:leading-15   text-[#E5F48C] leading-26 font-['Audiowide',"sain-serif"]`}
           >
             PORT
           </p>
           <p
-            className={`text-right m-2 text-[102px] text-[#E5F48C] leading-26 font-['Audiowide',"sain-serif"]`}
+            className={`text-right m-2 text-[102px] max-sm:text-2xl max-sm:leading-15   text-[#E5F48C] leading-26 font-['Audiowide',"sain-serif"]`}
           >
             FOLIO
           </p>
-          <p className="mt-16 -mb-6 text-xl text-right text-white">
+          <p className="mt-16 max-sm:mt-2 max-sm:mb-0 -mb-6 text-xl max-sm:text-[15px] text-right text-white">
             copyright@2025 Dheeraj dwivedi All Right Reserved
           </p>
         </div>
         <ul>
-          <li className="text-4xl text-right cursor-pointer mb-7 ">
+          <li className="text-4xl  max-sm:text-2xl max-sm:mb-2 text-right cursor-pointer mb-7 ">
             {" "}
             <NavLink
               to={"/"}
@@ -38,7 +38,7 @@ function Footer() {
               home
             </NavLink>
           </li>
-          <li className="text-4xl text-right cursor-pointer mb-7 ">
+          <li className="text-4xl  max-sm:text-2xl max-sm:mb-2 text-right cursor-pointer mb-7 ">
             {" "}
             <NavLink
               to={"/about"}
@@ -49,7 +49,7 @@ function Footer() {
               About
             </NavLink>
           </li>
-          <li className="text-4xl text-right cursor-pointer mb-7 ">
+          <li className="text-4xl  max-sm:text-2xl max-sm:mb-2 text-right cursor-pointer mb-7 ">
             <NavLink
               to={"/serves"}
               className={({ isActive }) =>
@@ -59,7 +59,7 @@ function Footer() {
               Serves
             </NavLink>
           </li>
-          <li className="text-4xl text-right cursor-pointer mb-7 ">
+          <li className="text-4xl  max-sm:text-2xl max-sm:mb-2 text-right cursor-pointer mb-7 ">
             {" "}
             <NavLink
               to={"/mywark"}
@@ -70,7 +70,7 @@ function Footer() {
               Work
             </NavLink>
           </li>
-          <li className="text-4xl text-right cursor-pointer mb-7 ">
+          <li className="text-4xl  max-sm:text-2xl max-sm:mb-2 text-right cursor-pointer mb-7 ">
             {" "}
             <NavLink
               to={"/contant"}

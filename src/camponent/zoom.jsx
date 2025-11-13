@@ -28,7 +28,7 @@ const MaskEffect = ({ data }) => {
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`relative w-110 h-100  border-[#51515193] border-2 rounded-xl bg-[#19191C] p-17 flex items-center hover:scale-3d hover:scale-102 hover:shadow-[0_10px_25px_rgba(230,244,141,0.3)] transform-3d ease-in-out duration-500 transition-transform  origin-left justify-center hover:rotate-x-10 hover:rotate-z-1 hover:rotate-y-10 ${data?.css}`}
+      className={`relative w-110 max-sm:w-[90%] m-auto max-sm:h-120 h-100 border-[#51515193] border-2 rounded-xl bg-[#19191C] p-17 flex items-center hover:scale-3d hover:scale-102 hover:shadow-[0_10px_25px_rgba(230,244,141,0.3)] transform-3d ease-in-out duration-500 transition-transform  origin-left justify-center hover:rotate-x-10 hover:rotate-z-1 hover:rotate-y-10 ${data?.css}`}
       style={{
         perspective: "1300px",
         transformStyle: "preserve-3d",

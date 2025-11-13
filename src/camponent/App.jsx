@@ -5,8 +5,7 @@ import HomePage from "../somePagesOfwebsite/HomePage.jsx";
 import Serves from "./Serves.jsx";
 import ContactForm from "./contant.jsx";
 import My_work from "./Mywork.jsx";
-import Footer from "./Footer.jsx";
-
+import Footer from "./footer.jsx";
 function App() {
   return (
     <>

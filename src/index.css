@@ -2,10 +2,9 @@
 @import "tailwindcss/utilities";   /* अब सिर्फ utilities होता है */
 
 
-body {
+ body {
   background-color: #161618;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 @keyframes roto {
   to {
@@ -59,5 +58,5 @@ body {
   to{
     opacity: 1;
     width: 85;
-  }
+  } 
 }

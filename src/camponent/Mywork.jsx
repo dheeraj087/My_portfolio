@@ -13,12 +13,12 @@ const My_work = () => {
   return (
     <>
       <h2
-        className={`text-[72px] mt-15 w-full overflow-hidden whitespace-break-spaces pl-15 text-left text-[#f1fb87] leading-16 tracking-[-3px] font-normal mb-5 font-['Audiowide',"sain-serif"] `}
+        className={`text-[72px] mt-15 max-sm:text-6xl max-sm:pl-5 w-full overflow-hidden whitespace-break-spaces pl-15 text-left text-[#f1fb87] leading-16 tracking-[-3px] font-normal mb-5 font-['Audiowide',"sain-serif"] `}
       >
         MY
       </h2>
       <h2
-        className={`text-[72px] w-full overflow-hidden whitespace-break-spaces pl-15 text-left text-[#f1fb87] leading-16 tracking-[-3px] font-normal mb-5 font-['Audiowide',"sain-serif"] `}
+        className={`text-[72px] w-full max-sm:text-6xl max-sm:pl-5 overflow-hidden whitespace-break-spaces pl-15 text-left text-[#f1fb87] leading-16 tracking-[-3px] font-normal mb-5 font-['Audiowide',"sain-serif"] `}
       >
         WORK
       </h2>
@@ -36,20 +36,20 @@ const My_work = () => {
           }}
         ></div>
       </div> */}
-      <div className={`w-[90%] m-auto grid gap-13 `}>
-        <div className={`grid grid-cols-2 gap-13 `}>
+      <div className={`w-[90%] m-auto grid gap-13 max-sm:gap-y-5 `}>
+        <div className={`grid grid-cols-2 max-sm:grid-cols-1 gap-13 max-sm:gap-y-5 `}>
           <MaskEffect />
           <MaskEffect />
         </div>
-        <div className={`grid grid-cols-1 gap-13`}>
-          <MaskEffect data={{css:"w-full"}}/>
+        <div className={`grid grid-cols-1 gap-13 max-sm:gap-y-5`}>
+          <MaskEffect data={{css:"w-full max-sm:w-[90%]"}}/>
         </div>
 
-        <div className={`grid grid-cols-2 gap-13`}>
+        <div className={`grid grid-cols-2 max-sm:grid-cols-1 gap-13 max-sm:gap-y-5`}>
           <MaskEffect />
           <MaskEffect />
         </div>
-        <div className={ `grid grid-cols-2 gap-13 `}>
+        <div className={ `grid grid-cols-2 max-sm:grid-cols-1 gap-13 max-sm:gap-y-5 `}>
           <MaskEffect />
           <MaskEffect />
         </div>

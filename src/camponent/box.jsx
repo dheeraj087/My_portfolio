@@ -12,7 +12,7 @@ const Box = ({ icon = false, className }) => {
   return (
     <>
       <div
-        className={`${className}  group relative w-full h-70 text-[${color}] bg-[#19191C] text-9xl gap-y-2.5 border-[#51515193] border-2 rounded-xl flex items-center decoration-current justify-center overflow-hidden  ${icon?.driction}`}
+        className={`${className}  group relative w-full max-sm:mb-4 h-70 text-[${color}] bg-[#19191C] text-9xl gap-y-2.5 border-[#51515193] border-2 rounded-xl flex items-center decoration-current justify-center overflow-hidden  ${icon?.driction}`}
         onMouseMove={(e) => handleMouseMove(icon?.index, e, icon?.glowRefs)}
         onMouseEnter={(e) => handleMouseEnter2(icon?.index, icon?.glowRefs)}
         onMouseLeave={(e) => handleMouseleave2(icon?.index, icon?.glowRefs)}
@@ -59,7 +59,7 @@ const Box2 = ({ icon = false }) => {
       >
         <Curser ref={(el) => (icon.glowRefs.current[icon.index] = el)} />
         <div>
-          <p>{icon.text}</p>
+          <p className="max-sm:text-5xl max-sm:ml-6">{icon.text}</p>
           <p className={`${icon.classabout}`}>{icon.text2}</p>
         </div>
         <div className={`${icon.classdis}`}>${icon.discription}</div>
@@ -80,8 +80,8 @@ const ServesBox = ({ icon }) => {
       >
         <Curser ref={(el) => (icon.glowRefs.current[icon?.index] = el)} />
         {icon?.contant[0]}
-        <p className={`${icon?.contantCss[1]}`}>{icon?.contant[1]}</p>
-        <p className={`${icon?.contantCss[2]}`}>{icon?.contant[2]}</p>
+        <p className={`${icon?.contantCss[1]} max-sm:text-3xl`}>{icon?.contant[1]}</p>
+        <p className={`${icon?.contantCss[2]} max-sm:text-[14px]`}>{icon?.contant[2]}</p>
       </div>
     </>
   );
@@ -91,7 +91,7 @@ function TestmonilBox({ contant }) {
   return (
     <>
       <div
-        className={`group relative w-65 h-65 bg-[#19191C] text-9xl p-2 border-[#51515193] border-2 rounded-xl overflow-hidden mr-7 transition-transform duration-500 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_25px_rgba(230,244,141,0.3)]`}
+        className={`group relative w-65 max-sm:w-11/12 h-65 bg-[#19191C] text-9xl p-2 border-[#51515193] border-2 rounded-xl overflow-hidden mr-7 max-sm:ml-4 transition-transform duration-500 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_25px_rgba(230,244,141,0.3)]`}
       >
         <div className="top relative w-[100%] flex gap-0 ">
           <div 

@@ -17,17 +17,17 @@ const Serves = ({active}) => {
   return (
     <>
       <h2
-        className={`text-[72px] w-full overflow-hidden whitespace-break-spaces pr-15 text-right text-[#e5f48c] leading-19 tracking-[-3px] font-normal mb-5 font-['Audiowide',"sain-serif"] ${active?.textCss}`}
+        className={`text-[72px] w-full max-sm:text-5xl overflow-hidden whitespace-break-spaces pr-15 text-right text-[#e5f48c] leading-19 max-sm:leading-9 max-sm:pr-5 tracking-[-3px] font-normal mb-5 font-['Audiowide',"sain-serif"] ${active?.textCss}`}
       >
         MY
       </h2>
       <h2
-        className={`text-[72px] w-full overflow-hidden whitespace-break-spaces pr-15 text-right text-[#e5f48c] leading-19 tracking-[-3px] font-normal mb-5 font-['Audiowide',"sain-serif"] ${active?.textCss}`}
+        className={`text-[72px] max-sm:text-5xl w-full overflow-hidden whitespace-break-spaces pr-15 text-right text-[#e5f48c] leading-19 max-sm:leading-9 max-sm:pr-5 tracking-[-3px] font-normal mb-5 font-['Audiowide',"sain-serif"] ${active?.textCss}`}
       >
         SERVICES 
       </h2>
-      <div className="w-[90%] m-auto mb-20 grid gap-6 ">
-        <div className="grid grid-cols-1 w-[100%] gap-4 ">
+      <div className="w-[90%] m-auto mb-20 grid gap-6 max-sm:gap-y-[12px] ">
+        <div className="grid grid-cols-1 w-[100%] gap-4 max-sm: ">
           <ServesBox
             icon={{
               color: "#e5f48c",
@@ -49,19 +49,19 @@ const Serves = ({active}) => {
             }}
           />
         </div>
-        <div className="grid w-full grid-cols-4 gap-4">
+        <div className="grid w-full grid-cols-4 max-sm:grid-cols-2 max-sm:gap-y-0 gap-4">
           <ServesBox
             icon={{
               glowRefs: glowRefs,
               index: 11,
               contant: [
-                <RiWindow2Line className="text-5xl text-[#6D6D6F] p-2 " />,
+                <RiWindow2Line className="text-5xl  text-[#6D6D6F] p-2 " />,
                 "Website",
                 "Bring your brand to life on the web with our custom website design and development services. From concept to launch,  and responsive websites",
               ],
               contantCss: [
                 `dxs`,
-                `text-4xl text-white p-2 `,
+                `text-4xl max-sm:text-3xl text-white p-2 `,
                 `text-[0.9111rem] text-[#fffdf2b3] font-normal leading-[25px] p-2 font-serif`,
               ],
             }}
@@ -119,12 +119,12 @@ const Serves = ({active}) => {
 
       {/* work togather  */}
       <h2
-        className={`text-[72px] w-full overflow-hidden whitespace-break-spaces pl-15 text-left text-[#e5f48c] leading-16 tracking-[-3px] font-normal mb-5 font-['Audiowide',"sain-serif"] -mt-20`}
+        className={`text-[72px] max-sm:text-4xl w-full overflow-hidden whitespace-break-spaces pl-15 max-sm:pl-5 text-left text-[#e5f48c] leading-16 max-sm:leading-7 tracking-[-3px] font-normal mb-5  font-['Audiowide',"sain-serif"] -mt-20`}
       >
         WORK
       </h2>
       <h2
-        className={`text-[72px] w-full overflow-hidden whitespace-break-spaces pl-15 text-left text-[#e5f48c] leading-18 tracking-[-3px] font-normal mb-5 font-['Audiowide',"sain-serif"] `}
+        className={`text-[72px] w-full max-sm:text-4xl overflow-hidden whitespace-break-spaces pl-15 max-sm:pl-5 text-left text-[#e5f48c] leading-18 max-sm:leading-7 tracking-[-3px] font-normal mb-5 max-sm:mb-4 font-['Audiowide',"sain-serif"] `}
       >
         TOGETHER
       </h2>
@@ -154,16 +154,16 @@ const Serves = ({active}) => {
       {/* // TESTIMON IALS */}
 
       <h2
-        className={`text-[72px] w-full overflow-hidden whitespace-break-spaces pl-15 text-left text-[#505050] leading-16 tracking-[-3px] font-normal mb-5 font-['Audiowide',"sain-serif"] -mt-20`}
+        className={`text-[72px] max-sm:text-5xl max-sm:leading-11 max-sm:pl-5 w-full overflow-hidden whitespace-break-spaces pl-15 text-left text-[#505050] leading-16 tracking-[-3px] font-normal mb-5 font-['Audiowide',"sain-serif"] max-sm:mt-[-120px] -mt-20`}
       >
         TESTIMON
       </h2>
       <h2
-        className={`text-[72px] w-full overflow-hidden whitespace-break-spaces pl-15 text-left text-[#505050] leading-18 tracking-[-3px] font-normal mb-5 font-['Audiowide',"sain-serif"] `}
+        className={`text-[72px] max-sm:text-5xl max-sm:leading-11 max-sm:pl-5 w-full overflow-hidden whitespace-break-spaces pl-15 text-left text-[#505050] leading-18 tracking-[-3px] font-normal mb-5 font-['Audiowide',"sain-serif"] `}
       >
         IALS
       </h2>
-      <div className="w-[90%] m-auto grid grid-cols-3 gap-x-10 mb-5">
+      <div className="w-[90%] m-auto grid grid-cols-3 max-sm:grid-cols-1 max-sm:gap-y-4 gap-x-10 mb-5">
         <TestmonilBox
           contant={{
             work: "Developer",

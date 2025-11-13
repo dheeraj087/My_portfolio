@@ -1,4 +1,3 @@
-// import fiFaFigma from "react-icons/fa";
 import {
   RiCss3Fill,
   RiHtml5Fill,
@@ -15,7 +14,7 @@ function AboutLink() {
       <img
         src={Adarsh}
         alt="my img"
-        className="h-[82%] absolute -bottom-43 right-83.5 w-auto object-cover rounded-3xl"
+        className="h-[82%] absolute -bottom-43 right-83.5 max-sm:right-7 w-auto object-cover rounded-3xl"
       />
     </div>
   );
