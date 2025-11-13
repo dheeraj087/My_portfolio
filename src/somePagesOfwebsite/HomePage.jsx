@@ -12,7 +12,6 @@ function HomePage() {
       <Serves />
       <ContactForm />
       <My_work />
-      <OfflinePage />
     </>
   );
 }

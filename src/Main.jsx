@@ -8,6 +8,5 @@ import OfflinePage from "./camponent/ofline.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
-    <OfflinePage />
   </StrictMode>
 );

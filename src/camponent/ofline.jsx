@@ -17,7 +17,8 @@ const OfflinePage = () => {
   }, []);
 
   if (!isOnline) {
-    // 👇 ye part sirf offline hone par dikhega
+
+   
     return (
       <div
         style={{
