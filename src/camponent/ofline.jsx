@@ -1,56 +1,60 @@
-// import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
-// const OfflinePage = () => {
-//   const [isOnline, setIsOnline] = useState(navigator.onLine);
+const OfflinePage = () => {
+  const [isOnline, setIsOnline] = useState(navigator.onLine);
 
-//   useEffect(() => {
-//     const handleOnline = () => {
-//       console.log("✅ Online");
-//       setIsOnline(true);
-//     };
+  useEffect(() => {
+    const handleOnline = () => setIsOnline(true);
+    const handleOffline = () => setIsOnline(false);
 
-//     const handleOffline = () => {
-//       console.log("❌ Offline");
-//       setIsOnline(false);
-//     };
+    window.addEventListener("online", handleOnline);
+    window.addEventListener("offline", handleOffline);
 
-//     window.addEventListener("online", handleOnline);
-//     window.addEventListener("offline", handleOffline);
+    return () => {
+      window.removeEventListener("online", handleOnline);
+      window.removeEventListener("offline", handleOffline);
+    };
+  }, []);
 
-//     // Cleanup
-//     return () => {
-//       window.removeEventListener("online", handleOnline);
-//       window.removeEventListener("offline", handleOffline);
-//     };
-//   }, []);
+  if (!isOnline) {
+    // 👇 ye part sirf offline hone par dikhega
+    return (
+      <div
+        style={{
+          height: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "#fff0f0",
+          color: "#b30000",
+          textAlign: "center",
+        }}
+      >
+        <h1>🔌 You’re Offline</h1>
+        <p>Please check your internet connection.</p>
+      </div>
+    );
+  }
 
-//   return (
-//     <div
-//       style={{
-//         height: "100vh",
-//         display: "flex",
-//         flexDirection: "column",
-//         justifyContent: "center",
-//         alignItems: "center",
-//         textAlign: "center",
-//         backgroundColor: isOnline ? "#e8fff1" : "#fff0f0",
-//         color: isOnline ? "#006400" : "#b30000",
-//         transition: "all 0.3s ease-in-out",
-//       }}
-//     >
-//       {isOnline ? (
-//         <>
-//           <h1>✅ You’re Online</h1>
-//           <p>Internet connection is active.</p>
-//         </>
-//       ) : (
-//         <>
-//           <h1>🔌 You’re Offline</h1>
-//           <p>Please check your internet connection.</p>
-//         </>
-//       )}
-//     </div>
-//   );
-// };
+  // 👇 ye part sirf online hone par dikhega
+  return (
+    <div
+      style={{
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#e8fff1",
+        color: "#006400",
+        textAlign: "center",
+      }}
+    >
+      <h1>✅ You’re Online</h1>
+      <p>Everything is working fine.</p>
+    </div>
+  );
+};
 
-// export default OfflinePage;
+export default OfflinePage;
