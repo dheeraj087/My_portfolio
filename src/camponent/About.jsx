@@ -112,7 +112,7 @@ const About = ({ Extra, textCss }) => {
               driction: " flex-row",
               discription:
                 "Hello, I'm Dheeraj Dwivedi, a UI/UX designer with a passion for creating beautiful and user-friendly digital experiences. Proficient in Figma, Framer, and Tailwind, I specialize in empathetic design, ensuring that every interface I craft not only looks great but also feels intuitive.",
-              classdis: "text-2xl max-sm:text-[12px] w-[80%] text-white text-center max-sm:mr-2",
+              classdis: "text-2xl max-sm:text-[1px] w-[80%] text-white text-center max-sm:mr-2",
               font: ["Audiowide", "sans-serif"],
               index: 6,
               glowRefs: glowRefs,
