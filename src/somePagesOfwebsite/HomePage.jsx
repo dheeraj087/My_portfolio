@@ -3,7 +3,7 @@ import Main from "../camponent/main";
 import My_work from "../camponent/Mywork";
 import Serves from "../camponent/Serves";
 import ContactForm from "../camponent/contant";
-import App2 from "../camponent/main4";
+import OfflinePage from "../camponent/ofline";
 function HomePage() {
   return (
     <>
@@ -12,6 +12,7 @@ function HomePage() {
       <Serves />
       <ContactForm />
       <My_work />
+      <OfflinePage />
     </>
   );
 }
