@@ -60,7 +60,6 @@ const About = ({ Extra, textCss }) => {
         {Extra && (
           <>
             <AboutLink />
-            ""
           </>
         )}
         <h2
@@ -112,7 +111,7 @@ const About = ({ Extra, textCss }) => {
               driction: " flex-row",
               discription:
                 "Hello, I'm Dheeraj Dwivedi, a UI/UX designer with a passion for creating beautiful and user-friendly digital experiences. Proficient in Figma, Framer, and Tailwind, I specialize in empathetic design, ensuring that every interface I craft not only looks great but also feels intuitive.",
-              classdis: "text-2xl max-sm:text-[13px] w-[80%] max-sm:mr-2 max-sm:text-[#fffdf2b3] font-normal leading-[20px] p-2 font-serif",
+              classdis: "text-2xl max-sm:text-[11px] w-150 max-sm:mr-2 max-sm:text-[#fffdf2b3] text-[#fffdf2b3] font-normal leading-[20px] p-2 font-serif",
               font: ["Audiowide", "sans-serif"],
               index: 6,
               glowRefs: glowRefs,
@@ -147,7 +146,6 @@ const About = ({ Extra, textCss }) => {
 
           </NavLink>
         </div>
-        {/* {Extra ? <AboutLink1 /> : ""} */}
       </div>
     </>
   );

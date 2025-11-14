@@ -173,7 +173,7 @@ const Serves = ({active}) => {
           contant={{
             work: "Developer",
             name: "Ajay",
-            img: "/My_portfolio/assets/ajay.png",
+            img: "/My_portfolio/assets/ajay.webp",
             workdis: "Ajay is a design genius!",
             discription:
               "This is unbelievable. He is too fast and he work with details. I will hire him again.Highly recommend!",
@@ -184,7 +184,7 @@ const Serves = ({active}) => {
           contant={{
             work: "Designer",
             name: "Adarsh",
-            img: "/My_portfolio/assets/Adarsh.png",
+            img: "/My_portfolio/assets/Adarsh.webp",
             workdis: "Adarsh is a design genius!",
             discription:
               "Adarsh was a game-changer for our online store. They designed a websiti that perfectly captures our brand's identity",
@@ -195,7 +195,7 @@ const Serves = ({active}) => {
           contant={{
             work: "Designer",
             name: "Dheeraj dwivedi",
-            img: "/My_portfolio/assets/dheeraj.jpg",
+            img: "/My_portfolio/assets/dheeraj.webp",
             workdis: "Dheeraj is a design genius!",
             discription:
               "Dheeraj was a game-changer for our online store. They designed a websiti that perfectly captures our brand's identity",

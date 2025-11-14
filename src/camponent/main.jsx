@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import "../index.css";
 import { FaArrowAltCircleRight, FaFileDownload } from "react-icons/fa";
-import mean2 from "../asscts/mean2.png"
-import man1 from "../asscts/man1.png"
+import mean2 from "../asscts/mean2.webp"
+import man1 from "../asscts/man1.webp"
 import {
   RiDownload2Line,
   RiFacebookFill,
@@ -75,22 +75,22 @@ const Main = () => {
 
       <div className="w-[90%] max-w-6xl mx-auto my-10 grid-cols-2 grid max-sm:grid-cols-1 grid-rows-1 max-sm:grid-rows-1 md:gap-3 gap-4 max-sm:gap-y-5 gap-y-px ">
 
-        {isMobile ? "" : 
+        {isMobile ? "" :
           <NavLink to={"https://share.google/MqFC02p8Yr925somY"}
             target="_blank"
             rel="noopener noreferrer"
           >
- <Box
-          icon={{
-            icon: icons[0].icon,
-            index: 0,
-            glowRefs: glowRefs,
-            istext: false,
-          }}
-        />
-          
-        </NavLink>
-         }
+            <Box
+              icon={{
+                icon: icons[0].icon,
+                index: 0,
+                glowRefs: glowRefs,
+                istext: false,
+              }}
+            />
+
+          </NavLink>
+        }
         <div
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
@@ -100,6 +100,7 @@ const Main = () => {
             ref={imgRef}
             src={mean2}
             alt="main png img"
+            loading="lazy"
             className="absolute z-10 w-2/4 -top-57 right-7  max-sm:w-2/3 max-sm-top-50 max-sm-right-11"
           />
           <p className="text-7xl">Let's</p> <p className="text-7xl">Talk</p>
@@ -110,24 +111,25 @@ const Main = () => {
           </NavLink>
         </div>
         {isMobile ? <NavLink to={"https://share.google/MqFC02p8Yr925somY"}
-
+          loading="lazy"
           target="_blank"
           rel="noopener noreferrer"
         >
-<Box
-          icon={{
-            icon: icons[0].icon,
-            index: 0,
-            glowRefs: glowRefs,
-            istext: false,
-          }}
-        />
-          
+          <Box
+            icon={{
+              icon: icons[0].icon,
+              index: 0,
+              glowRefs: glowRefs,
+              istext: false,
+            }}
+          />
+
         </NavLink> : ""}
-        <NavLink 
-        to={"https://www.instagram.com/dheerajdwivedi141?utm_source=qr&igsh=MTV4aW85aDFuc3Bydg=="}
+        <NavLink
+          to={"https://www.instagram.com/dheerajdwivedi141?utm_source=qr&igsh=MTV4aW85aDFuc3Bydg=="}
           target="_blank"
           rel="noopener noreferrer"
+          loading="lazy"
         >
 
           <Box
@@ -139,20 +141,21 @@ const Main = () => {
             }}
           />
         </NavLink>
-<NavLink to={"https://www.facebook.com/dheeraj.dwivedi.104"} 
-  target="_blank"
-  rel="noopener noreferrer"
-> 
+        <NavLink to={"https://www.facebook.com/dheeraj.dwivedi.104"}
+          target="_blank"
+          rel="noopener noreferrer"
+          loading="lazy"
+        >
           <Box
-          icon={{
-            icon: icons[2].icon,
-            index: 2,
-            glowRefs: glowRefs,
-            istext: false,
-          }}
-        />
+            icon={{
+              icon: icons[2].icon,
+              index: 2,
+              glowRefs: glowRefs,
+              istext: false,
+            }}
+          />
         </NavLink>
-        
+
       </div>
     </main>
   );

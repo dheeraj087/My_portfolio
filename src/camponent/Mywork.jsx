@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import MaskEffect from "./zoom";
-
 const My_work = () => {
   const reff = useRef(null);
   const [pos, setpos] = useState({ x: 0, y: 0 });
@@ -9,7 +8,7 @@ const My_work = () => {
     setpos({ x: e.clientX - rect.left - 30, y: e.clientY - rect.top - 30 });
     console.log(pos.x, e.currentTarget.getBoundingClientRect());
   };
-
+// import 
   return (
     <>
       <h2
@@ -38,20 +37,20 @@ const My_work = () => {
       </div> */}
       <div className={`w-[90%] m-auto grid gap-13 max-sm:gap-y-5 `}>
         <div className={`grid grid-cols-2 max-sm:grid-cols-1 gap-13 max-sm:gap-y-5 `}>
-          <MaskEffect img="/My_portfolio/assets/fur.jpg" />
-          <MaskEffect img="/My_portfolio/assets/desiner.jpg" />
+          <MaskEffect img="/My_portfolio/assets/fur.webp" />
+          <MaskEffect img="/My_portfolio/assets/desiner.webp" />
         </div>
         {/* <div className={`grid grid-cols-1 gap-13 max-sm:gap-y-5`}>
           <MaskEffect data={{css:"w-full max-sm:w-[90%]"}} img="/My_portfolio/assets/Adarsh.png" />
         </div> */}
 
         <div className={`grid grid-cols-2 max-sm:grid-cols-1 gap-13 max-sm:gap-y-5`}>
-          <MaskEffect img="/My_portfolio/assets/buld.jpg" />
-          <MaskEffect img="/My_portfolio/assets/images.jpg" />
+          <MaskEffect img="/My_portfolio/assets/buld.webp" />
+          <MaskEffect img="/My_portfolio/assets/images.webp" />
         </div>
         <div className={ `grid grid-cols-2 max-sm:grid-cols-1 gap-13 max-sm:gap-y-5 `}>
-          <MaskEffect img="/My_portfolio/assets/primum.jpg" />
-          <MaskEffect img="/My_portfolio/assets/image.jpg" />
+          <MaskEffect img="/My_portfolio/assets/primum.webp" />
+          <MaskEffect img="/My_portfolio/assets/image.webp" />
         </div>
       </div>
     </>

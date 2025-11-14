@@ -62,7 +62,7 @@ const Box2 = ({ icon = false }) => {
           <p className="max-sm:text-5xl max-sm:ml-6">{icon.text}</p>
           <p className={`${icon.classabout}`}>{icon.text2}</p>
         </div>
-        <div className={`${icon.classdis}`}>${icon.discription}</div>
+        <div className={`${icon.classdis}`}>{icon.discription}</div>
       </div>
     </>
   );

@@ -1,12 +1,5 @@
-import {
-  RiCss3Fill,
-  RiHtml5Fill,
-  RiJavascriptLine,
-  RiReactjsFill,
-  RiTailwindCssFill,
-} from "react-icons/ri";
-import HeroSection from "./particalbg";
-import Adarsh from "../asscts/man1.png";
+import React from "react";
+import Adarsh from "../asscts/man1.webp";
 
 function AboutLink() {
   return (
@@ -14,6 +7,7 @@ function AboutLink() {
       <img
         src={Adarsh}
         alt="my img"
+        loading="lazy"
         className="h-[82%] absolute -bottom-43 right-83.5 max-sm:right-7 w-auto object-cover rounded-3xl"
       />
     </div>

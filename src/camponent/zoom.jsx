@@ -38,6 +38,7 @@ const MaskEffect = ({ data,img }) => {
       <img
         src={img}
         alt="App"
+        loading="lazy"
         className="w-[100%] max-sm:w-100 max-sm:h-80 rounded-xl z-10 relative"
       />
 
