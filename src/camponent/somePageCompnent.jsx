@@ -4,6 +4,11 @@ import Adarsh from "../asscts/man1.webp";
 function AboutLink() {
   return (
     <div className="w-[90%] m-auto relative h-[500px] rounded-3xl border-2 border-solid border-[#3e3a3a] bg-[#19191C]">
+    <h2
+          className={`block font-[Audiowide] text-[#E5F48C] text-7xl m-auto max-sm:text-3xl ml-20 max-sm:ml-6 uppercase mt-10 `}
+        >
+          web developer &rarr; ui/ux designer
+        </h2>
       <img
         src={Adarsh}
         alt="my img"
